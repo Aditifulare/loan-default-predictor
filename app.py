@@ -8,12 +8,16 @@ st.set_page_config(page_title="Loan Default Risk Predictor", page_icon="💰", l
 st.markdown("""
 <style>
 .stApp { background-color: #EAF4FB; }
-h1, h2, h3 { color: #0B3D5C; }
+h1, h2, h3, p, label, .stMarkdown, .stCaption, span { color: #0B3D5C !important; }
+div[data-testid="stNumberInput"] label, div[data-testid="stSelectbox"] label { color: #0B3D5C !important; }
+div[data-testid="stNumberInput"] input { color: #0B3D5C !important; background-color: white !important; }
+div[data-baseweb="select"] { background-color: white !important; }
+div[data-baseweb="select"] * { color: #0B3D5C !important; }
 div.stButton > button {
-    background-color: #1B6CA8; color: white; border-radius: 8px;
+    background-color: #1B6CA8; color: white !important; border-radius: 8px;
     font-weight: 600; padding: 0.5em 1.5em; border: none;
 }
-div.stButton > button:hover { background-color: #0B3D5C; color: white; }
+div.stButton > button:hover { background-color: #0B3D5C; color: white !important; }
 </style>
 """, unsafe_allow_html=True)
 
